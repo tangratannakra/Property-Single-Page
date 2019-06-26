@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,700,900&display=swap');
+
+
+
+.container {
+    z-index: 1;
+    padding-top:70px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-weight: 900;
+}
+
+
+
+/* House Logo*/
+.house-bottom {
+    background-color: var(--pink);
+    width:30px;
+    height:25px;
+}
+.house-top {
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid var(--pink);
+}
+.row {
+    z-index:1;
+}
+/* Sectiions */
+
+/* first Section */
+#first {
+    position: relative;
+    display:block;
+    height:700px;
+    background-image: url(/assets/img/section1-house.jpg);
+    background-size: cover;
+    background-color: var(--purple);
+    color:white;
+}
+
+.overlay-purple{
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  position: absolute;
+  z-index:0;
+  background-color: rgba(57,0,60,0.85);
+}
+
+#logo a{ 
+    color: var(--green);
+    font-size:2rem;
+    font-weight: 900;
+    font-family: 'Noto Sans HK', sans-serif;
+    margin-left:10px;
+    letter-spacing: -0.1rem;
+}
+
+nav#main-nav a{
+    color:white;
+    font-weight: bold;
+    font-size:1rem;
+}
+
+#first h1 {
+    font-size:5.2rem;
+    color: var(--green); 
+    padding-top: 140px;
+    padding-bottom: 50px;
+    letter-spacing: 0.1rem;
+}
+
+#search{
+    max-width:680px;
+    min-width:320px;
+    color: white;
+}
+
+#search form {
+    width:100%;
+    border-bottom: 1px solid var(--green);
+}
+
+#search input {
+    background: none;
+    color:white;
+    border:none;
+    width:90%;
+}
+
+#search input::placeholder {
+    color:white;
+    font-size:1.7rem;
+    word-spacing: 5px;
+}
+
+#search button {
+    background: none;
+    border:none;
+    font-size:2rem;
+}
+
+
+/* Secon Section*/
+#second {
+    background-color: var(--green);
+    color: var(--purple);
+}
+
+.card {
+    border:0px;
+    border-radius:0;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .4);
+}
+
+.card-image {
+    position: relative;
+    display:block;
+}
+
+.tags {
+    position: absolute;
+    bottom:0px;
+    display: flex;
+}
+
+.tag-sale, .tag-price {
+    padding:10px 20px;
+    color:var(--yellow);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.tag-info {
+    float:left;
+    padding-right: 20px;
+}
+
+.tag-info i {
+    padding-right: 5px;
+}
+
+.tag-bedroom, .tag-bathroom, .tag-parking {
+    justify-content: center;
+    font-size: 2rem;
+    width:33%;
+    display:flex;
+    padding-bottom:10px;
+    position:relative;
+}
+
+.tag-bedroom::after, .tag-bathroom::after, .tag-parking::after {
+    font-size:1rem;
+    bottom:0px;
+    position:absolute;
+    padding-bottom:30px;
+} 
+
+.tag-bedroom::after {
+    content: 'Bedrooms';
+}
+
+.tag-bathroom::after {
+    content: 'Bathrooms';
+    
+}
+
+.tag-parking::after {
+    content: 'Parking';
+}
+
+/* Section 3*/
+
+
+#seven {
+    
+}
+
+#eight {
+    background-color: var(--purple);
+    color: var(--yellow);
+}
+
+footer {
+    background-color: var(--grey);
+    color:white;
+}
+
+/* main elemens*/
+.btn{
+    color:#fff!important;
+}
+
+
+/* color scheme */
+.fas {
+    color: var(--pink);
+}  
+
+.pink {
+    background-color: var(--pink);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.grey {
+    background-color: var(--grey);
+}
+
+:root {
+    --purple: #39003c;
+    --green: #01ff83;
+    --pink: #fd0057;
+    --light-blue: #17eefc;
+    --grey: #221f1f;
+    --light-grey: #f7f8f9;
+    --yellow: #e5d7b0;
+}
+
