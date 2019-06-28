@@ -1,19 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,700,900&display=swap');
 
+body {
+    color: var(--purple);
+}
 
+p {
+    color: var(--grey);
+}
 
 .container {
     z-index: 1;
-    padding-top:70px;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 38px;
     font-family: 'Noto Sans HK', sans-serif;
     font-weight: 900;
 }
 
+h2 {
+    font-size: 24px;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-weight: 400;
+}
 
+.row {
+    z-index:1;
+}
+
+
+
+/* Sectiions */
+
+/* first Section */
+#first {
+    position: relative;
+    display:block;
+    height:700px;
+    background-image: url(/assets/img/section1-house.jpg);
+    background-size: cover;
+    background-color: var(--purple);
+    color:white;
+}
 
 /* House Logo*/
 .house-bottom {
@@ -27,21 +55,6 @@ h1 {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 15px solid var(--pink);
-}
-.row {
-    z-index:1;
-}
-/* Sectiions */
-
-/* first Section */
-#first {
-    position: relative;
-    display:block;
-    height:700px;
-    background-image: url(/assets/img/section1-house.jpg);
-    background-size: cover;
-    background-color: var(--purple);
-    color:white;
 }
 
 .overlay-purple{
@@ -58,7 +71,7 @@ h1 {
 
 #logo a{ 
     color: var(--green);
-    font-size:2rem;
+    font-size:35px;
     font-weight: 900;
     font-family: 'Noto Sans HK', sans-serif;
     margin-left:10px;
@@ -72,11 +85,11 @@ nav#main-nav a{
 }
 
 #first h1 {
-    font-size:5.2rem;
+    font-size:72px;
     color: var(--green); 
     padding-top: 140px;
     padding-bottom: 50px;
-    letter-spacing: 0.1rem;
+    letter-spacing: 2px;
 }
 
 #search{
@@ -110,7 +123,7 @@ nav#main-nav a{
 }
 
 
-/* Secon Section*/
+/* Second Section*/
 #second {
     background-color: var(--green);
     color: var(--purple);
@@ -120,6 +133,7 @@ nav#main-nav a{
     border:0px;
     border-radius:0;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, .4);
+    width:350px;
 }
 
 .card-image {
@@ -149,46 +163,214 @@ nav#main-nav a{
     padding-right: 5px;
 }
 
-.tag-bedroom, .tag-bathroom, .tag-parking {
-    justify-content: center;
-    font-size: 2rem;
-    width:33%;
-    display:flex;
-    padding-bottom:10px;
-    position:relative;
+.card-bottom {
+    padding:25px 0px 30px 0px;
 }
 
-.tag-bedroom::after, .tag-bathroom::after, .tag-parking::after {
-    font-size:1rem;
-    bottom:0px;
-    position:absolute;
+.tag-info-bottom {
+    display: inline-block;
+    text-align: center;
+    font-size: 35px;
+    padding:0px 25px;
+}
+
+.tag-info-bottom:first-child {
+    border-right: 1px solid var(--purple);
+}
+
+.tag-info-bottom:last-child {
+    border-left: 1px solid var(--purple);
+}
+
+.tag-info-bottom span {
+    display:block;
+    text-align: center;
+    font-size:15px;
+}
+
+
+/* Section Three*/
+#third {
+    background-image: url(/assets/img/section3-interior.jpg);
+    background-size: cover;
+    color: var(--purple);
+}
+
+#featured-properties{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding:50px 60px;
+    box-shadow: 0px 0px 15px #000;
+}
+
+#featured-properties ul {
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+/* Section Four*/
+#four {
+    color: var(--purple);
+}
+
+#four p {
+    color: var(--grey);
+}
+
+#four .fa-coins {
+    color: var(--green);
+}
+
+#four .fa-box-open {
+    color: var(--light-blue);
+}
+
+#four .fa-camera {
+    color:#ebff00;
+}
+
+#four .fa-handshake {
+    color: var(--purple);
+}
+
+#four .fas {
+    font-size: 64px;
     padding-bottom:30px;
-} 
-
-.tag-bedroom::after {
-    content: 'Bedrooms';
 }
 
-.tag-bathroom::after {
-    content: 'Bathrooms';
+.contact-agent {
+    background-color: var(--light-grey)
+}
+
+.agent-thumb {
+    width:70px;
+    height:70px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid var(--pink);
+}
+
+.agent-thumb img {
+    height:100%;
+    width:auto;
+}
+
+
+/* Section Five*/
+
+/* Section Six*/
+#six {
+    background: url(/assets/img/section6-box.png) right top no-repeat, url(/assets/img/section6-girl.jpg);
+    background-size: content, cover;
+}
+
+#property-management {
+    padding: 90px 35px 100px 35px;
+}
+
+#property-management ul{
+    list-style: none;
+}
+
+
+/* Section Seven*/
+#seven h1 {
+    line-height: 40px;
+}
+
+.arrow-nav {
+   float:right; 
+   font-size:22px;
+}
+
+#seven .fas {
+    color: var(--purple);
+    margin:0 8px;
+}
+.image-holder {    
+    width: 117px;
+    height: 117px;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 50px;
+    left: 20px;
+    position: relative;
+}
+
+.image-holder img{
+    height: 117px;
+    overflow: hidden;
+    
     
 }
-
-.tag-parking::after {
-    content: 'Parking';
+.comments-card {
+    width:50%;
+}
+.comment-field::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left:-50px;
+    background: radial-gradient(circle at bottom left, transparent 50px, #fff 0);
+    border-radius: 0px 0px 0px 20px;
 }
 
-/* Section 3*/
+.comment-field {
+    font-size: 1.2rem;
+    margin: 0 auto 40px;
+    max-width: 400px;
+    max-height:100%;
+    padding: 15px;
 
-
-#seven {
-    
+  width: 400px;
+  margin: 40px;
+  background: #fff;;
+  border-radius: 0px 20px 20px 20px;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+}
+.comment-field h1 {
+    color: var(--pink);
 }
 
+/* Section Eight */
 #eight {
-    background-color: var(--purple);
+    padding:60px 0;
     color: var(--yellow);
 }
+
+#eight p {
+    line-height: 1.8rem;
+}
+#eight .heading {
+    font-size:32px;
+}
+#eight h1 {
+    font-size: 28px;
+    color: var(--green);
+}
+
+#eight ul {
+    list-style-position: inside;
+    padding-left: 0px;
+}
+
+#eight ul li {
+    position: relative;
+    font-size:8px;
+    padding-bottom: 5px;
+}
+
+#eight ul li span {
+    font-size:1rem;
+    margin-left: -5px;
+}
+
 
 footer {
     background-color: var(--grey);
@@ -214,9 +396,7 @@ footer {
     background-color: var(--purple);
 }
 
-.grey {
-    background-color: var(--grey);
-}
+
 
 :root {
     --purple: #39003c;
@@ -228,3 +408,39 @@ footer {
     --yellow: #e5d7b0;
 }
 
+
+/* Social Buttons*/
+.scl-btn {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    padding-top: 8px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin:5px;
+    color: white;
+  }
+  /* Hover Effect */
+  .scl-btn:hover {
+    opacity: 0.8;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  /* Round buttons */
+  .scl-crcl {
+    border-radius: 50%;
+  }
+  /* Round Corners */
+  .scl-rnd {
+      border-radius:5px;
+  }
+  /* Brand Colors */
+  .fa-facebook-f { background: #3B5998; }
+  .fa-twitter { background: #55ACEE; }
+  .fa-youtube { background: #bb0000; }
+  .fa-instagram { background: #125688; }
+  .fa-pinterest { background: #cb2027; }
+
+ 
