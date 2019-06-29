@@ -14,17 +14,17 @@
 
 <body>
     <section id="first" class="overlay">
-        <div class="overlay-purple">
+        
             <div class="container">
-                <div class="row d-flex align-items-baseline">
-                    <div id="logo" class="d-flex align-items-baseline col-md-6 ">
+                <div class="row align-items-baseline">
+                    <div id="logo" class="d-flex align-items-baseline col-md-6 px-0">
                         <div>
                             <div class="house-top"></div>
                             <div class="house-bottom"></div>
                         </div>
                         <a href="#">Property</a>
                     </div>
-                    <nav id="main-nav" class="col-md-6 d-flex justify-content-between">
+                    <nav id="main-nav" class="col-md-6 d-flex justify-content-between px-0">
                         <a href="">Buy</a>
                         <a href="">Rent</a>
                         <a href="">Sell</a>
@@ -36,28 +36,29 @@
                 <div class="row flex-column">
                     <h1>Your search starts here.</h1>
                     <div id="search">
-                        <form class="example" action="action_page.php">
+                        <form class="search d-flex justify-content-between" action="">
                             <input type="text" placeholder="Search by location or postcode" name="search">
                             <button type="button"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
+                    <div class="col-lg-5 justify-content-between align-items-baseline d-flex px-0">
+                            Popular ...
+                            <button type="button" class="pink btn">Northgate</button>
+                            <button type="button" class="pink btn">HU18</button>
+                            <button type="button" class="pink btn">Leven</button>
+                            <button type="button" class="pink btn">Hornsea</button>
+                    </div>
                 </div>
-                <div class="row justify-content-between align-items-baseline col-md-5 py-2">
-                    Popular ...
-                    <button type="button" class="pink btn">Northgate</button>
-                    <button type="button" class="pink btn">HU18</button>
-                    <button type="button" class="pink btn">Leven</button>
-                    <button type="button" class="pink btn">Hornsea</button>
-                </div>
+                
             </div>
-        </div>
+        
 
 
     </section>
 
     <section id="second">
-        <div class="container py-5">
-            <div class="row justify-content-between align-items-baseline py-4">
+        <div class="container">
+            <div class="row justify-content-between align-items-baseline">
                 <h1>Latest properties...</h1>
                 <button type="button" class="pink btn">View all properties</button>
             </div>
@@ -127,9 +128,9 @@
     <section id="third">
         <div class="container d-flex justify-content-center align-items-center flex-column">
             <div id="featured-properties">
-                <div class="featured-properties-tag purple tag">featued properties</div>
+                <div class="featured-properties-tag purple tag"><i class="fas fa-rocket"></i>featued properties</div>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-8 px-0">
                         <div class="tag-info"><i class="fas fa-map-marker-alt"></i>Hornsea</div>
                         <div class="tag-info"><i class="fas fa-home"></i>Semi-detached</div>
                         <h1>12 Chayene Walk </h1>
@@ -155,17 +156,17 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="sub-feature">Address<span>4 bedrooms</span></div>
-                <div class="sub-feature">Address<span>4 bedrooms</span></div>
-                <div class="sub-feature">Address<span>4 bedrooms</span></div>
+            <div class="row bottom">
+                <div class="sub-feature"><i class="fas fa-map-marker-alt"></i>Address4 bedrooms</div>
+                <div class="sub-feature"><i class="fas fa-map-marker-alt"></i>Address4 bedrooms</div>
+                <div class="sub-feature"><i class="fas fa-map-marker-alt"></i>Address4 bedrooms</div>
             </div>
         </div>
     </section>
     <section id="four">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 py-5">
+                <div class="col-md-7 px-0">
                     <h1>Selling your property</h1>
                     <h2>Our Agents can make the difference</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quaerat id quo. Corporis earum
@@ -232,17 +233,18 @@
                 </div>
                 <div class="col-md-8">
 
-                    <form action="">
-                        <div class="row">
+                    <form id="email" action="">
+                        <div class="row main-row">
                             <input type="text">
                             <input type="text">
                             <button class="btn pink" type="submit"><i class="fas fa-envelope"></i>Join</button>
                         </div>
-                        <div class="row">
-                            <input type="checkbox">
-                            <input type="checkbox">
-                            <input type="checkbox">
-                            <input type="text">
+                        <div class="row bottom-row align-items-center flex-nowrap">
+                            <input id="house" type="checkbox"><label for="house">House</label>
+                            <input id="flats" type="checkbox"><label for="flats">Flats</label>
+                            <input id="for-sale" type="checkbox"><label for="for-sale">For Sale</label>
+                            <input id="for-rent" type="checkbox"><label for="for-rent">For Rent</label>
+                            <input id="prices-around" type="text" placeholder="£"><label for="prices-around">Prices around</label>
                         </div>
 
                     </form>
