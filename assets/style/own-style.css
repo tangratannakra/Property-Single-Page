@@ -63,7 +63,7 @@ i {
     overflow: hidden;
     background-image:url(/assets/img/section1-purple-overlay.png), url(/assets/img/section1-house.jpg);
     background-size: cover;
-    
+    padding: 60px 0 130px 0;
     color: white;
 }
 
@@ -100,7 +100,7 @@ nav#main-nav a {
 }
 
 #first h1 {
-    font-size: 5.7rem;
+    font-size: calc(2rem + 7vmin);
     color: var(--green);
     padding-top: 140px;
     padding-bottom: 50px;
@@ -143,6 +143,7 @@ nav#main-nav a {
 #second {
     background-color: var(--green);
     color: var(--purple);
+    padding: 90px 0px 120px 0px;
 }
 
 .card {
@@ -211,6 +212,7 @@ nav#main-nav a {
     background-image: url(/assets/img/section3-interior.jpg);
     background-size: cover;
     color: var(--purple);
+    height:
 }
 
 #third .tag-info-bottom {
@@ -245,8 +247,7 @@ nav#main-nav a {
 .sub-feature {
     padding:10px 20px;
     color: var(--yellow);
-    background-color: rgba(0, 0, 0, 0.5);
-    
+    background-color: rgba(0, 0, 0, 0.5);гит
 }
 
 .sub-feature:first-child{
@@ -262,6 +263,7 @@ nav#main-nav a {
 /* Section Four*/
 #four {
     color: var(--purple);
+    padding-top:90px;
 }
 
 #four p {
@@ -284,7 +286,11 @@ nav#main-nav a {
     color: var(--purple);
 }
 
-#four .fas {
+#four .icons {
+    padding:70px 0;
+}
+
+#four .icons .fas {
     font-size: 64px;
     padding-bottom: 30px;
 }
@@ -310,6 +316,7 @@ nav#main-nav a {
 /* Section Five*/
 #five {
     color: var(--yellow);
+    padding:70px 0;
 }
 
 form#email input[type='text'] {
@@ -370,6 +377,9 @@ form#email .bottom-row label {
 
 
 /* Section Seven*/
+#seven {
+    padding:60px 0 100px 0;
+}
 #seven h1 {
     line-height: 40px;
 }
@@ -389,8 +399,8 @@ form#email .bottom-row label {
     height: 117px;
     overflow: hidden;
     border-radius: 50%;
-    top: 50px;
-    left: 20px;
+    top: 10px;
+    left: 30px;
     position: relative;
 }
 
@@ -401,6 +411,7 @@ form#email .bottom-row label {
 
 .comments-card {
     width: 50%;
+    background: #fff;
 }
 
 .comment-field::before {
@@ -417,18 +428,15 @@ form#email .bottom-row label {
 
 .comment-field {
     font-size: 1.2rem;
-    margin: 0 auto 40px;
     max-width: 400px;
     max-height: 100%;
     padding: 15px;
-
     width: 400px;
-    margin: 40px;
     background: #fff;
-    ;
     border-radius: 0px 20px 20px 20px;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
+
 
 .comment-field h1 {
     color: var(--pink);
@@ -436,12 +444,16 @@ form#email .bottom-row label {
 
 /* Section Eight */
 #eight {
-    padding: 60px 0;
+    padding: 60px 0 70px 0;
     color: var(--yellow);
 }
 
 #eight p {
     line-height: 1.8rem;
+    color: var(--yellow);
+}
+#eight #logo {
+    padding-bottom:40px
 }
 
 #eight .heading {
@@ -451,6 +463,7 @@ form#email .bottom-row label {
 #eight h1 {
     font-size: 28px;
     color: var(--green);
+    padding-bottom:22px;
 }
 
 #eight ul {
@@ -473,7 +486,9 @@ form#email .bottom-row label {
 footer {
     background-color: var(--grey);
     color: white;
+    padding:35px 0px
 }
+
 
 /* main elemens*/
 .btn {
