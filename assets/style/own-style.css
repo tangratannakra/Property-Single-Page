@@ -2,8 +2,7 @@
 
 @font-face {
     font-family: 'Renner';
-    src: url(/assets/renner-book.otf);
-     url(/assets/renner-black.otf)    
+    src: url(/assets/renner-book.otf);  
   }
 
   @font-face {
@@ -16,6 +15,37 @@
     src: url(/assets/renner-black.otf);
 }
 
+@media (max-width: 480px){
+    #first {
+        padding: 20px 10px!important;
+    }
+
+    #first h1 {
+        padding-top:20px!important;
+    }
+
+    #four .col {
+        border:0px!important;
+        margin-bottom:50px;
+    }
+
+    #four .icons .fas {
+        padding-bottom:0px!important;
+    } 
+    .comments-card {
+        width:100%!important;
+        margin:20px 0px; 
+    }
+
+}
+
+@media (min-width: 992px) and (max-width:1200px){
+    #second .justify-content-lg-between {
+        justify-content: space-around!important;
+    }
+
+
+}
 
 body {
     color: var(--purple);
@@ -32,16 +62,25 @@ p {
 }
 
 h1 {
-    font-size: 38px;
+    font-size: 46px;
     font-family: 'Renner-bold', sans-serif;
     font-weight: 900;
+    margin-bottom: 16px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 32px;
     font-family: 'Renner', sans-serif;
     font-weight: 400;
+    margin: 10px 0 30px;
 }
+
+h3 {
+    font-size: 32px;
+    font-family: 'Renner-bold', sans-serif;
+    font-weight: 400;
+}
+
 
 .row {
     z-index: 1;
@@ -49,6 +88,10 @@ h2 {
 
 i {
     padding-right:5px;
+}
+
+.btn {
+    color: #fff !important;
 }
 
 
@@ -150,7 +193,10 @@ nav#main-nav a {
     border: 0px;
     border-radius: 0;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, .4);
-    width: 350px;
+}
+
+.card:last-child{
+    margin-right:0px;
 }
 
 .card-image {
@@ -212,7 +258,6 @@ nav#main-nav a {
     background-image: url(/assets/img/section3-interior.jpg);
     background-size: cover;
     color: var(--purple);
-    height:
 }
 
 #third .tag-info-bottom {
@@ -224,6 +269,7 @@ nav#main-nav a {
     padding: 50px 60px;
     box-shadow: 0px 0px 15px #000;
     position: relative;
+    margin:250px 0px 350px 0;
 }
 
 .featured-properties-tag {
@@ -247,7 +293,7 @@ nav#main-nav a {
 .sub-feature {
     padding:10px 20px;
     color: var(--yellow);
-    background-color: rgba(0, 0, 0, 0.5);гит
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .sub-feature:first-child{
@@ -269,6 +315,18 @@ nav#main-nav a {
 #four p {
     color: var(--grey);
 }
+
+#four .col {
+    padding-left: 40px;
+    padding-right:40px;
+    border-right: 2px solid var(--light-grey);
+}
+
+#four .col:last-child{
+    border:none;
+}
+
+.icons h2 {margin-bottom:0px;}
 
 #four .fa-coins {
     color: var(--green);
@@ -300,8 +358,10 @@ nav#main-nav a {
 }
 
 .agent-thumb {
+    float:left;
     width: 70px;
     height: 70px;
+    margin-right:20px;
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid var(--pink);
@@ -311,6 +371,23 @@ nav#main-nav a {
     height: 100%;
     width: auto;
 }
+
+.agent-info {
+    float:left;
+    color: var(--grey);
+}
+
+.agent-info span {
+    font-family: "renner-bold";
+}
+
+.agent-info .contact a, .agent-info .tel {
+    color: var(--grey);
+    font-family: "renner-bold";
+}
+
+
+
 
 
 /* Section Five*/
@@ -367,6 +444,7 @@ form#email .bottom-row label {
     background-size: content, cover;
 }
 
+
 #property-management {
     padding: 90px 35px 100px 35px;
 }
@@ -387,6 +465,7 @@ form#email .bottom-row label {
 .arrow-nav {
     float: right;
     font-size: 22px;
+    margin-right: 10px;
 }
 
 #seven .fas {
@@ -399,8 +478,8 @@ form#email .bottom-row label {
     height: 117px;
     overflow: hidden;
     border-radius: 50%;
-    top: 10px;
-    left: 30px;
+    top: 30px;
+    left: 15px;
     position: relative;
 }
 
@@ -410,7 +489,6 @@ form#email .bottom-row label {
 }
 
 .comments-card {
-    width: 50%;
     background: #fff;
 }
 
@@ -427,24 +505,23 @@ form#email .bottom-row label {
 }
 
 .comment-field {
-    font-size: 1.2rem;
-    max-width: 400px;
     max-height: 100%;
     padding: 15px;
-    width: 400px;
+    margin:20px;
+    width:70%;
     background: #fff;
     border-radius: 0px 20px 20px 20px;
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.4));
 }
 
 
-.comment-field h1 {
+.comment-field h3 {
     color: var(--pink);
 }
 
 /* Section Eight */
 #eight {
-    padding: 60px 0 70px 0;
+    padding: 60px 0 40px 0;
     color: var(--yellow);
 }
 
@@ -461,14 +538,14 @@ form#email .bottom-row label {
 }
 
 #eight h1 {
-    font-size: 28px;
+    font-size: 32px;
     color: var(--green);
-    padding-bottom:22px;
 }
 
 #eight ul {
     list-style-position: inside;
     padding-left: 0px;
+    padding-top:8px;
 }
 
 #eight ul li {
@@ -487,12 +564,6 @@ footer {
     background-color: var(--grey);
     color: white;
     padding:35px 0px
-}
-
-
-/* main elemens*/
-.btn {
-    color: #fff !important;
 }
 
 

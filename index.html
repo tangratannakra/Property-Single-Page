@@ -21,12 +21,7 @@
                     class="navbar navbar-expand-lg navbar-light px-0 col-md-12 px-0">
                     
                         <div id="logo" class="d-md-flex align-items-baseline col-md-6 px-0">
-                                <a class="navbar-brand " href="#"></a>
-                            <div>
-                                <div class="house-top"></div>
-                                <div class="house-bottom"></div>
-                            </div>
-                            <a href="#"></a>Property</a>
+                                <a class="navbar-brand " href="#"><img src="/assets/img/section1-logo.png" alt="Logo"></a>
                         </a>
                         </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -92,8 +87,9 @@
                 <h1>Latest properties...</h1>
                 <button type="button" class="pink btn">View all properties</button>
             </div>
-            <div class="row justify-content-between">
-                <div class="card">
+            <div class="row flex-wrap justify-content-sm-around justify-content-md-around justify-content-lg-between">
+                
+                <div class="card my-sm-4">
                     <div class="card-image">
                         <img src="/assets/img/house-1.jpg" alt="Card image cap">
                         <div class="tags">
@@ -113,7 +109,7 @@
                         <div class="tag-info-bottom">1<span>Parking</span></div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card my-sm-4">
                     <div class="card-image">
                         <img src="/assets/img/house-2.jpg" alt="Card image cap">
                         <div class="tags">
@@ -126,13 +122,13 @@
                         <div class="tag-info"><i class="fas fa-map-marker-alt"></i>Hornsea</div>
                         <div class="tag-info"><i class="fas fa-home"></i>Semi-detached</div>
                     </div>
-                    <div class="card-bottom">
+                    <div class="card-bottom ">
                         <div class="tag-info-bottom">4<span>Bedroom</span></div>
                         <div class="tag-info-bottom">2<span>Bathroom</span></div>
                         <div class="tag-info-bottom">1<span>Parking</span></div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card my-sm-4">
                     <div class="card-image">
                         <img src="/assets/img/house-3.jpg" alt="Card image cap">
                         <div class="tags">
@@ -157,12 +153,14 @@
     </section>
     <section id="third">
         <div class="container d-md-flex justify-content-center align-items-center flex-column">
-            <div id="featured-properties">
+            <div id="featured-properties" class="col-8">
                 <div class="featured-properties-tag purple tag"><i class="fas fa-rocket"></i>featued properties</div>
                 <div class="row">
-                    <div class="col-md-8 px-0">
-                        <div class="tag-info"><i class="fas fa-map-marker-alt"></i>Hornsea</div>
-                        <div class="tag-info"><i class="fas fa-home"></i>Semi-detached</div>
+                    <div class="col-lg-9 px-0">
+                            <div class="row">
+                                    <div class="tag-info"><i class="fas fa-map-marker-alt"></i>Hornsea</div>
+                            <div class="tag-info"><i class="fas fa-home"></i>Semi-detached</div>
+                            </div>
                         <h1>12 Chayene Walk </h1>
                         <div class="card-bottom">
                             <div class="tag-info-bottom">4<span>Bedroom</span></div>
@@ -170,7 +168,7 @@
                             <div class="tag-info-bottom">1<span>Parking</span></div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-3">
                         <div class="tag-sale pink">For Sale</div>
                         <div class="tag-price purple">£175,000</div>
                     </div>
@@ -206,20 +204,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="icons col-md-12 d-md-flex justify-content-between align-items-stretch">
-                    <div class="col-md-2 text-center"><i class="fas fa-coins "></i>
+                <div class="icons col-md-12 d-md-flex justify-content-center flex-wrap">
+                    <div class="col text-center"><i class="fas fa-coins "></i>
                         <h2>No sale no fee</h2>
                     </div>
-                    <div class="col-md-2 text-center"><i class="fas fa-box-open"></i>
+                    <div class="col text-center"><i class="fas fa-box-open"></i>
                         <h2>20% of legal costs</h2>
                     </div>
-                    <div class="col-md-2 text-center"><i class="fas fa-camera"></i>
+                    <div class="col text-center"><i class="fas fa-camera"></i>
                         <h2>Free photography and video</h2>
                     </div>
-                    <div class="col-md-2 text-center"><i class="fas fa-handshake"></i>
+                    <div class="col text-center"><i class="fas fa-handshake"></i>
                         <h2>Profesional friendly service</h2>
                     </div>
-                    <div class="col-md-2 text-center"><i class="fas fa-gem"></i>
+                    <div class="col text-center"><i class="fas fa-gem"></i>
                         <h2>3D property walkthrough</h2>
                     </div>
                 </div>
@@ -227,29 +225,30 @@
             <div class="row">
                 <div class="container d-md-flex contact-agent py-md-5 px-sm-5 px-md-0">
                     <div class="col-md-4 px-md-5">
-                        <h1>Contact our agents for help</h1>
+                        <h3>Contact our</br>agents for help</h3>
                     </div>
-                    <div class="agent col-md-4">
+                    <div class="agent col-md-4 col-sm-12">
                         <div class="agent-thumb">
                             <img src="/assets/img/section6-girl.jpg" alt="agent-thumb">
                         </div>
 
                         <div class="agent-info">
-                            Christoper Burkill - property sales
+                                <span>Christoper Burkill</span> - Property sales
                             <div class="tel"><i class="fas fa-phone-square"></i>01482 238743</div>
-                            <div><i class="fas fa-envelope-square"></i>Send Chris <a href="#">а message</a></div>
+                            <div class="contact"><i class="fas fa-envelope-square"></i><a href="#">Send Chris а message</a></div>
                         </div>
                     </div>
-                    <div class="agent col-md-4">
-                        <div class="agent-thumb">
-                            <img src="/assets/img/section6-girl.jpg" alt="agent-thumb">
+                    <div class="agent col-md-4 col-sm-12">
+                            <div class="agent-thumb">
+                                <img src="/assets/img/section6-girl.jpg" alt="agent-thumb">
+                            </div>
+    
+                            <div class="agent-info">
+                                    <span>Christoper Burkill</span> - Property sales
+                                <div class="tel"><i class="fas fa-phone-square"></i>01482 238743</div>
+                                <div class="contact"><i class="fas fa-envelope-square"></i><a href="#">Send Chris а message</a></div>
+                            </div>
                         </div>
-                        <div class="agent-info">
-                            Christoper Burkill - property sales
-                            <div class="tel"><i class="fas fa-phone-square"></i>01482 238743</div>
-                            <div><i class="fas fa-envelope-square"></i>Send Chris <a href="#">а message</a></div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -327,25 +326,25 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row justify-content-between flex-sm-wrap">
-                            <div class="col px-0 comments-card d-md-flex justify-content-between">
+                            <div class="col col-lg-6 col-md-12 px-0 my-sm-5 comments-card d-md-flex justify-content-between">
                                 <div class="image-holder">
                                     <img src="/assets/img/section6-girl.jpg" alt="">
                                 </div>
                                 <div class="comment-field">
-                                    <h1>It sounds corny but they do really care</h1>
+                                    <h3>It sounds corny but they do really care</h3>
                                     <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ut cum velit
                                         modi tempora
                                         sed animi culpa ipsam asperiores perspiciatis."</p>
                                     <p class="author">Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
-                            <div class="col px-0 comments-card d-md-flex justify-content-between">
+                            <div class="col col-lg-6 col-md-12 px-0 my-sm-5 comments-card d-md-flex justify-content-between">
                                 <div class="image-holder">
                                     <img src="/assets/img/section6-girl.jpg" alt="">
                                 </div>
 
                                 <div class="comment-field">
-                                    <h1>It sounds corny but they do really care</h1>
+                                    <h3>It sounds corny but they do really care</h3>
                                     <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ut cum velit
                                         modi tempora
                                         sed animi culpa ipsam asperiores perspiciatis."</p>
@@ -431,7 +430,7 @@
                         eligendi, totam illo, nulla eveniet quos? Eum beatae
                         amet
                         nulla saepe distinctio?</p>
-                    <div class="social py-sm-5">
+                    <div class="social py-md-4 py-sm-5">
                         <a href="#" class="scl-btn scl-crcl shadow fab fa-facebook-f"></a>
                         <a href="#" class="scl-btn scl-crcl shadow fab fa-youtube"></a>
                         <a href="#" class="scl-btn scl-crcl shadow fab fa-instagram"></a>
