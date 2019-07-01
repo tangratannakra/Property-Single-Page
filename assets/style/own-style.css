@@ -1,47 +1,93 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,700,900&display=swap');
-
 @font-face {
     font-family: 'Renner';
-    src: url(/assets/renner-book.otf);  
-  }
+    src: url(/assets/renner-book.otf);
+}
 
-  @font-face {
-      font-family: 'Renner-bold';
-      src: url(/assets/renner-bold.otf);
-  }
+@font-face {
+    font-family: 'Renner-bold';
+    src: url(/assets/renner-bold.otf);
+}
 
-  @font-face {
+@font-face {
     font-family: 'Renner-black';
     src: url(/assets/renner-black.otf);
 }
 
-@media (max-width: 480px){
-    #first {
-        padding: 20px 10px!important;
-    }
 
-    #first h1 {
-        padding-top:20px!important;
-    }
-
-    #four .col {
-        border:0px!important;
-        margin-bottom:50px;
-    }
-
-    #four .icons .fas {
-        padding-bottom:0px!important;
-    } 
-    .comments-card {
-        width:100%!important;
-        margin:20px 0px; 
+/* Bootstrap 4 breakpoints */
+@media (max-width: 575px) {
+    .justify-content-xs-center {
+        justify-content: center !important;
+        margin: 20px 0;
     }
 
 }
 
-@media (min-width: 992px) and (max-width:1200px){
-    #second .justify-content-lg-between {
-        justify-content: space-around!important;
+@media (min-width: 320px) {
+    #six {
+        background: linear-gradient(to bottom, #17eefc 45%, #56015a 45%, #56015a 100%);
+    }
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+    #selling-section .col {
+        border-right: 2px solid var(--light-grey);
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #six {
+        background: url(/assets/img/section6-box.png), url(/assets/img/section6-girl.jpg);
+        background-size: 70% 100%, cover;
+        background-repeat: no-repeat, no-repeat;
+        background-position: 140% 0, 0 0;
+    }
+
+    #property-management {
+        width: 60%;
+    }
+}
+
+/*   Custom media queries  */
+@media (max-width: 480px) {
+    #header {
+        padding: 20px 10px !important;
+    }
+
+    #header h1 {
+        padding-top: 20px !important;
+    }
+
+    #selling-section .col {
+        margin-bottom: 50px;
+    }
+
+    #selling-section .icons .fas {
+        padding-bottom: 0px !important;
+    }
+
+    .comments-card {
+        width: 100% !important;
+        margin: 20px 0px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    #latest-properties .justify-content-lg-between {
+        justify-content: space-around !important;
     }
 
 
@@ -62,21 +108,21 @@ p {
 }
 
 h1 {
-    font-size: 46px;
+    font-size: 2.9rem;
     font-family: 'Renner-bold', sans-serif;
     font-weight: 900;
     margin-bottom: 16px;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 1.8rem;
     font-family: 'Renner', sans-serif;
     font-weight: 400;
     margin: 10px 0 30px;
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 1.8rem;
     font-family: 'Renner-bold', sans-serif;
     font-weight: 400;
 }
@@ -87,24 +133,25 @@ h3 {
 }
 
 i {
-    padding-right:5px;
+    padding-right: 5px;
 }
 
 .btn {
     color: #fff !important;
 }
 
+.d-lg-flex {
+    display: flex !important;
+}
+
 
 /* Sectiions */
 
 /* first Section */
-#first {
+#header {
     position: relative;
-    display: block;
-    min-height: 350px;
-    max-height: 700px;
     overflow: hidden;
-    background-image:url(/assets/img/section1-purple-overlay.png), url(/assets/img/section1-house.jpg);
+    background-image: url(/assets/img/section1-purple-overlay.png), url(/assets/img/section1-house.jpg);
     background-size: cover;
     padding: 60px 0 130px 0;
     color: white;
@@ -135,14 +182,18 @@ i {
     display: inline-block;
 }
 
+nav#main-nav ul {
+    width: 100%
+}
+
 nav#main-nav a {
     color: white;
-    font-weight: bold;
+
     font-size: 1rem;
     font-family: 'Renner-bold', sans-serif;
 }
 
-#first h1 {
+#header h1 {
     font-size: calc(2rem + 7vmin);
     color: var(--green);
     padding-top: 140px;
@@ -178,12 +229,12 @@ nav#main-nav a {
     background: none;
     border: none;
     font-size: 2rem;
-    color:var(--yellow);
+    color: var(--yellow);
 }
 
 
 /* Second Section*/
-#second {
+#latest-properties {
     background-color: var(--green);
     color: var(--purple);
     padding: 90px 0px 120px 0px;
@@ -195,13 +246,17 @@ nav#main-nav a {
     box-shadow: 0px 0px 6px rgba(0, 0, 0, .4);
 }
 
-.card:last-child{
-    margin-right:0px;
+.card:last-child {
+    margin-right: 0px;
 }
 
 .card-image {
     position: relative;
     display: block;
+}
+
+.card-image img {
+    width: 100%;
 }
 
 .tags {
@@ -216,6 +271,7 @@ nav#main-nav a {
     color: var(--yellow);
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
 }
 
 .tag-info {
@@ -249,36 +305,47 @@ nav#main-nav a {
 .tag-info-bottom span {
     display: block;
     text-align: center;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 
 /* Section Three*/
-#third {
+#featured-section {
     background-image: url(/assets/img/section3-interior.jpg);
     background-size: cover;
     color: var(--purple);
 }
 
-#third .tag-info-bottom {
-    border:none;
+#featured-section .tag-info-bottom {
+    border: none;
 }
 
 #featured-properties {
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 50px 60px;
+    padding: 50px 60px 30px;
     box-shadow: 0px 0px 15px #000;
     position: relative;
-    margin:250px 0px 350px 0;
+    margin: 250px 0px 350px 0;
 }
 
 .featured-properties-tag {
     position: absolute;
-    top:0px;
-    left:0px;
-    color:var(--yellow);
+    top: -45px;
+    left: 0px;
+    color: var(--yellow);
     text-transform: uppercase;
-    padding:10px 15px;
+    padding: 10px 15px;
+}
+
+#featured-section .tag-info-bottom {
+    font-weight: bold;
+    font-size: 2rem;
+    ;
+}
+
+#featured-section .tag-info-bottom span {
+    font-weight: normal;
+    font-size: 1.3rem;
 }
 
 #featured-properties ul {
@@ -287,68 +354,74 @@ nav#main-nav a {
     -webkit-column-count: 2;
     -webkit-column-gap: 20px;
     column-count: 2;
-    column-gap: 20px;
+    column-gap: 40px;
+    width: 100%;
+    list-style: none;
+    color: var(--grey);
+    font-size: 1.2rem;
+    padding: 0px;
 }
 
 .sub-feature {
-    padding:10px 20px;
+    padding: 10px 20px;
     color: var(--yellow);
     background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
 }
 
-.sub-feature:first-child{
+.sub-feature:first-child {
     background-color: var(--pink);
-    margin-right:10px;
 }
 
-.sub-feature i{
-    color:#fff;
-    padding-right:15px;
+.sub-feature i {
+    color: #fff;
+    padding-right: 15px;
 }
 
 /* Section Four*/
-#four {
+#selling-section {
     color: var(--purple);
-    padding-top:90px;
+    padding-top: 90px;
 }
 
-#four p {
+#selling-sectionur p {
     color: var(--grey);
 }
 
-#four .col {
+#selling-section .col {
     padding-left: 40px;
-    padding-right:40px;
-    border-right: 2px solid var(--light-grey);
+    padding-right: 40px;
 }
 
-#four .col:last-child{
-    border:none;
+#selling-section .col:last-child {
+    border: none;
 }
 
-.icons h2 {margin-bottom:0px;}
+.icons h2 {
+    margin-bottom: 0px;
+}
 
-#four .fa-coins {
+#selling-section .fa-coins {
     color: var(--green);
 }
 
-#four .fa-box-open {
+#selling-section .fa-box-open {
     color: var(--light-blue);
 }
 
-#four .fa-camera {
+#selling-section .fa-camera {
     color: #ebff00;
 }
 
-#four .fa-handshake {
+#selling-section .fa-handshake {
     color: var(--purple);
 }
 
-#four .icons {
-    padding:70px 0;
+.icons {
+    padding: 70px 0;
 }
 
-#four .icons .fas {
+#selling-section .icons .fas {
     font-size: 64px;
     padding-bottom: 30px;
 }
@@ -358,10 +431,10 @@ nav#main-nav a {
 }
 
 .agent-thumb {
-    float:left;
+    float: left;
     width: 70px;
     height: 70px;
-    margin-right:20px;
+    margin-right: 20px;
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid var(--pink);
@@ -373,7 +446,7 @@ nav#main-nav a {
 }
 
 .agent-info {
-    float:left;
+    float: left;
     color: var(--grey);
 }
 
@@ -381,7 +454,8 @@ nav#main-nav a {
     font-family: "renner-bold";
 }
 
-.agent-info .contact a, .agent-info .tel {
+.agent-info .contact a,
+.agent-info .tel {
     color: var(--grey);
     font-family: "renner-bold";
 }
@@ -391,26 +465,27 @@ nav#main-nav a {
 
 
 /* Section Five*/
-#five {
+#submit-section {
     color: var(--yellow);
-    padding:70px 0;
+    padding: 70px 0;
 }
 
 form#email input[type='text'] {
-    padding:5px;
-    border:0px;
+    padding: 5px;
+    border: 0px;
 
 }
+
 form#email .main-row input[type='text'] {
-    border:0px;
-    margin-right:30px;
-    height:60px;
-    width:230px;
+    border: 0px;
+    margin-right: 30px;
+    height: 60px;
+    width: 230px;
     background-color: #fff;
 }
 
 form#email .main-row {
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
 
 form#email button[type='submit'] {
@@ -418,47 +493,69 @@ form#email button[type='submit'] {
     font-weight: bold;
 }
 
-form#email .bottom-row input[type="checkbox"]{
-    height:35px;
-    width:35px;
-    margin-right: 15px;  
+form#email .bottom-row input[type="checkbox"] {
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
 }
-form#email .bottom-row input[type="text"]{
+
+form#email .bottom-row input[type="text"] {
     width: 130px;
-    height:35px;
+    height: 35px;
     margin-right: 15px;
 }
 
 form#email .bottom-row input[type="text"]#prices-around::placeholder {
-    color:var(--purple); 
+    color: var(--purple);
     font-weight: bold;
 }
 
 form#email .bottom-row label {
-    margin-right:30px; 
+    margin-right: 30px;
 }
 
 /* Section Six*/
-#six {
-    background: url(/assets/img/section6-box.png) right top no-repeat, url(/assets/img/section6-girl.jpg);
-    background-size: content, cover;
+
+#property-management h1 {
+    font-size: calc(1rem + 8vmin);
+    margin-bottom: 13vmin;
 }
 
-
 #property-management {
-    padding: 90px 35px 100px 35px;
+    padding: 80px 35px 100px 35px;
 }
 
 #property-management ul {
     list-style: none;
 }
 
+#property-management ul li {
+    line-height: 2rem;
+    font-size: 1.8rem;
+    padding-bottom: 15px;
+    color: white;
+}
+
+#property-management ul li i {
+    margin-right: 30px;
+}
+
+#property-management h3,
+#property-management a {
+    color: #fff;
+}
+
+#property-management h3 {
+    margin-top: 30px;
+}
+
 
 /* Section Seven*/
-#seven {
-    padding:60px 0 100px 0;
+#quotes-section {
+    padding: 60px 0;
 }
-#seven h1 {
+
+#quotes-section h1 {
     line-height: 40px;
 }
 
@@ -468,7 +565,7 @@ form#email .bottom-row label {
     margin-right: 10px;
 }
 
-#seven .fas {
+#quotes-section .fas {
     color: var(--purple);
     margin: 0 8px;
 }
@@ -506,9 +603,9 @@ form#email .bottom-row label {
 
 .comment-field {
     max-height: 100%;
-    padding: 15px;
-    margin:20px;
-    width:70%;
+    padding: 15px 20px;
+    margin: 20px;
+    width: 70%;
     background: #fff;
     border-radius: 0px 20px 20px 20px;
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.4));
@@ -529,8 +626,9 @@ form#email .bottom-row label {
     line-height: 1.8rem;
     color: var(--yellow);
 }
+
 #eight #logo {
-    padding-bottom:40px
+    padding-bottom: 40px
 }
 
 #eight .heading {
@@ -545,7 +643,7 @@ form#email .bottom-row label {
 #eight ul {
     list-style-position: inside;
     padding-left: 0px;
-    padding-top:8px;
+    padding-top: 8px;
 }
 
 #eight ul li {
@@ -563,7 +661,7 @@ form#email .bottom-row label {
 footer {
     background-color: var(--grey);
     color: white;
-    padding:35px 0px
+    padding: 35px 0px
 }
 
 

@@ -13,22 +13,21 @@
 </head>
 
 <body>
-    <section id="first" class="overlay">
+    <section id="header" class="overlay">
 
         <div class="container">
             <div class="row ">
-                <nav id="main-nav"
-                    class="navbar navbar-expand-lg navbar-light px-0 col-md-12 px-0">
-                    
-                        <div id="logo" class="d-md-flex align-items-baseline col-md-6 px-0">
-                                <a class="navbar-brand " href="#"><img src="/assets/img/section1-logo.png" alt="Logo"></a>
+                <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark px-0 col-md-12 px-0">
+
+                    <div id="logo" class="d-md-flex align-items-baseline col-md-6 px-0">
+                        <a class="navbar-brand " href="#"><img src="/assets/img/section1-logo.png" alt="Logo"></a>
                         </a>
-                        </div>
+                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse"  id="navbarText">
+                    <div class="collapse navbar-collapse" id="navbarText">
                         <ul class="navbar-nav d-md-flex justify-content-between">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Buy</a>
@@ -52,11 +51,6 @@
 
                     </div>
                 </nav>
-
-
-
-
-                
             </div>
             <div class="row flex-column">
                 <h1>Your search starts here.</h1>
@@ -66,12 +60,13 @@
                         <button type="button"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
-                <div class="col-md-5 justify-content-between align-items-baseline d-md-flex px-0 py-4">
+                <div
+                    class="col-lg-5 col-md-6 justify-content-between align-items-baseline d-md-flex px-0 py-4 d-none d-md-block">
                     Popular ...
-                    <button type="button" class="pink btn">Northgate</button>
-                    <button type="button" class="pink btn">HU18</button>
-                    <button type="button" class="pink btn">Leven</button>
-                    <button type="button" class="pink btn">Hornsea</button>
+                    <button type="button" class="pink btn mx-md-1">Northgate</button>
+                    <button type="button" class="pink btn mx-md-1">HU18</button>
+                    <button type="button" class="pink btn mx-md-1">Leven</button>
+                    <button type="button" class="pink btn mx-md-1">Hornsea</button>
                 </div>
             </div>
 
@@ -81,14 +76,14 @@
 
     </section>
 
-    <section id="second">
+    <section id="latest-properties">
         <div class="container">
             <div class="row justify-content-between align-items-baseline">
                 <h1>Latest properties...</h1>
                 <button type="button" class="pink btn">View all properties</button>
             </div>
-            <div class="row flex-wrap justify-content-sm-around justify-content-md-around justify-content-lg-between">
-                
+            <div class="row justify-content-xs-center justify-content-sm-around justify-content-lg-between">
+
                 <div class="card my-sm-4">
                     <div class="card-image">
                         <img src="/assets/img/house-1.jpg" alt="Card image cap">
@@ -151,16 +146,16 @@
             </div>
         </div>
     </section>
-    <section id="third">
+    <section id="featured-section" class="d-none d-lg-block">
         <div class="container d-md-flex justify-content-center align-items-center flex-column">
             <div id="featured-properties" class="col-8">
                 <div class="featured-properties-tag purple tag"><i class="fas fa-rocket"></i>featued properties</div>
                 <div class="row">
                     <div class="col-lg-9 px-0">
-                            <div class="row">
-                                    <div class="tag-info"><i class="fas fa-map-marker-alt"></i>Hornsea</div>
+                        <div class="row">
+                            <div class="tag-info"><i class="fas fa-map-marker-alt"></i>Hornsea</div>
                             <div class="tag-info"><i class="fas fa-home"></i>Semi-detached</div>
-                            </div>
+                        </div>
                         <h1>12 Chayene Walk </h1>
                         <div class="card-bottom">
                             <div class="tag-info-bottom">4<span>Bedroom</span></div>
@@ -169,32 +164,35 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="tag-sale pink">For Sale</div>
-                        <div class="tag-price purple">£175,000</div>
+                        <div class="tag-sale pink py-lg-5">For Sale</div>
+                        <div class="tag-price purple py-lg-5">£175,000</div>
                     </div>
                 </div>
                 <div class="row">
-                    <ul>
-                        <li>4 bedroom detached home</li>
-                        <li>Amazing view over hornsea</li>
-                        <li>Elegant interior</li>
-                        <li>Large gardens</li>
-                        <li>Extensive gardens</li>
-                        <li>view in essentals</li>
+                    <ul class="py-lg-4 py-md-3">
+                        <li><i class="fas fa-check"></i>4 bedroom detached home</li>
+                        <li><i class="fas fa-check"></i>Amazing view over hornsea</li>
+                        <li><i class="fas fa-check"></i>Elegant interior</li>
+                        <li><i class="fas fa-check"></i>Large gardens</li>
+                        <li><i class="fas fa-check"></i>Extensive gardens</li>
+                        <li><i class="fas fa-check"></i>view in essentals</li>
                     </ul>
                 </div>
             </div>
-            <div class="row bottom">
-                <div class="sub-feature"><i class="fas fa-map-marker-alt"></i>Address4 bedrooms</div>
-                <div class="sub-feature"><i class="fas fa-map-marker-alt"></i>Address4 bedrooms</div>
-                <div class="sub-feature"><i class="fas fa-map-marker-alt"></i>Address4 bedrooms</div>
+            <div class="row bottom d-none d-lg-block">
+                <div class="d-flex">
+                    <div class="sub-feature"><i class="fas fa-map-marker-alt"></i>Address4 bedrooms</div>
+                    <div class="sub-feature"><i class="fas fa-map-marker-alt"></i>Address4 bedrooms</div>
+                    <div class="sub-feature"><i class="fas fa-map-marker-alt"></i>Address4 bedrooms</div>
+                </div>
+
             </div>
         </div>
     </section>
-    <section id="four">
+    <section id="selling-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 px-0">
+                <div class="col-sm-12 col-lg-7 px-sm-5 px-md-0">
                     <h1>Selling your property</h1>
                     <h2>Our Agents can make the difference</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quaerat id quo. Corporis earum
@@ -205,25 +203,25 @@
             </div>
             <div class="row">
                 <div class="icons col-md-12 d-md-flex justify-content-center flex-wrap">
-                    <div class="col text-center"><i class="fas fa-coins "></i>
+                    <div class="col text-center my-4"><i class="fas fa-coins "></i>
                         <h2>No sale no fee</h2>
                     </div>
-                    <div class="col text-center"><i class="fas fa-box-open"></i>
+                    <div class="col text-center my-4"><i class="fas fa-box-open"></i>
                         <h2>20% of legal costs</h2>
                     </div>
-                    <div class="col text-center"><i class="fas fa-camera"></i>
+                    <div class="col text-center my-4"><i class="fas fa-camera"></i>
                         <h2>Free photography and video</h2>
                     </div>
-                    <div class="col text-center"><i class="fas fa-handshake"></i>
+                    <div class="col text-center my-4"><i class="fas fa-handshake"></i>
                         <h2>Profesional friendly service</h2>
                     </div>
-                    <div class="col text-center"><i class="fas fa-gem"></i>
+                    <div class="col text-center my-4"><i class="fas fa-gem"></i>
                         <h2>3D property walkthrough</h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="container d-md-flex contact-agent py-md-5 px-sm-5 px-md-0">
+            <div class="row d-none d-md-block">
+                <div class="container d-md-flex contact-agent py-5 px-sm-5 px-md-0">
                     <div class="col-md-4 px-md-5">
                         <h3>Contact our</br>agents for help</h3>
                     </div>
@@ -233,28 +231,30 @@
                         </div>
 
                         <div class="agent-info">
-                                <span>Christoper Burkill</span> - Property sales
+                            <span>Christoper Burkill</span> - Property sales
                             <div class="tel"><i class="fas fa-phone-square"></i>01482 238743</div>
-                            <div class="contact"><i class="fas fa-envelope-square"></i><a href="#">Send Chris а message</a></div>
+                            <div class="contact"><i class="fas fa-envelope-square"></i><a href="#">Send Chris а
+                                    message</a></div>
                         </div>
                     </div>
                     <div class="agent col-md-4 col-sm-12">
-                            <div class="agent-thumb">
-                                <img src="/assets/img/section6-girl.jpg" alt="agent-thumb">
-                            </div>
-    
-                            <div class="agent-info">
-                                    <span>Christoper Burkill</span> - Property sales
-                                <div class="tel"><i class="fas fa-phone-square"></i>01482 238743</div>
-                                <div class="contact"><i class="fas fa-envelope-square"></i><a href="#">Send Chris а message</a></div>
-                            </div>
+                        <div class="agent-thumb">
+                            <img src="/assets/img/section6-girl.jpg" alt="agent-thumb">
                         </div>
+
+                        <div class="agent-info">
+                            <span>Christoper Burkill</span> - Property sales
+                            <div class="tel"><i class="fas fa-phone-square"></i>01482 238743</div>
+                            <div class="contact"><i class="fas fa-envelope-square"></i><a href="#">Send Chris а
+                                    message</a></div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
     </section>
-    <section id="five" class="purple">
+    <section id="submit-section" class="purple d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -266,13 +266,13 @@
                         <div class="row main-row">
                             <input type="text">
                             <input type="text">
-                            <button class="btn pink" type="submit"><i class="fas fa-envelope"></i>Join</button>
+                            <button class="btn pink my-md-3" type="submit"><i class="fas fa-envelope"></i>Join</button>
                         </div>
                         <div class="row bottom-row align-items-center flex-nowrap">
                             <input id="house" type="checkbox"><label for="house">House</label>
                             <input id="flats" type="checkbox"><label for="flats">Flats</label>
-                            <input id="for-sale" type="checkbox"><label for="for-sale">For Sale</label>
-                            <input id="for-rent" type="checkbox"><label for="for-rent">For Rent</label>
+                            <input id="for-sale" type="checkbox"><label for="for-sale">For sale</label>
+                            <input id="for-rent" type="checkbox"><label for="for-rent">For rent</label>
                             <input id="prices-around" type="text" placeholder="£"><label for="prices-around">Prices
                                 around</label>
                         </div>
@@ -285,7 +285,7 @@
 
     </section>
     <section id="six">
-        <div class="container d-md-flex justify-content-end">
+        <div class="container d-md-flex justify-content-end d-none d-sm-block">
             <div id="property-management">
                 <h1>No pain property management</h1>
                 <div class="row">
@@ -300,11 +300,9 @@
                 <button type="button" class="btn pink">Find out more</button>
                 <h3>Call 01482 293405 or <a href="#">send us a message</a></h3>
             </div>
-
-
         </div>
     </section>
-    <section id="seven">
+    <section id="quotes-section" class="d-none d-lg-block">
         <div class="container">
             <div id="carouselExampleCaptions" class="carousel slide" data-interval="false">
                 <div class="row">
@@ -326,7 +324,8 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row justify-content-between flex-sm-wrap">
-                            <div class="col col-lg-6 col-md-12 px-0 my-sm-5 comments-card d-md-flex justify-content-between">
+                            <div
+                                class="col col-lg-6 col-md-12 px-0 my-sm-5 comments-card d-md-flex justify-content-between">
                                 <div class="image-holder">
                                     <img src="/assets/img/section6-girl.jpg" alt="">
                                 </div>
@@ -335,10 +334,11 @@
                                     <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ut cum velit
                                         modi tempora
                                         sed animi culpa ipsam asperiores perspiciatis."</p>
-                                    <p class="author">Lorem ipsum dolor sit amet.</p>
+                                    <p class="author font-weight-bold">Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
-                            <div class="col col-lg-6 col-md-12 px-0 my-sm-5 comments-card d-md-flex justify-content-between">
+                            <div
+                                class="col col-lg-6 col-md-12 px-0 my-sm-5 comments-card d-md-flex justify-content-between">
                                 <div class="image-holder">
                                     <img src="/assets/img/section6-girl.jpg" alt="">
                                 </div>
@@ -348,7 +348,7 @@
                                     <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ut cum velit
                                         modi tempora
                                         sed animi culpa ipsam asperiores perspiciatis."</p>
-                                    <p class="author">Lorem ipsum dolor sit amet.</p>
+                                    <p class="author font-weight-bold">Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
                         </div>
@@ -420,12 +420,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 px-sm-5 px-md-0">
-                        <div id="logo">
-                            <div>
-                               <a href=""><img src="/assets/img/section8-logo.png" alt="Property logo"></a>
-                            </div>
+                    <div id="logo">
+                        <div>
+                            <a href=""><img src="/assets/img/section8-logo.png" alt="Property logo"></a>
                         </div>
-                    
+                    </div>
+
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque non commodi explicabo officiis
                         eligendi, totam illo, nulla eveniet quos? Eum beatae
                         amet
@@ -438,7 +438,7 @@
                         <a href="#" class="scl-btn scl-crcl shadow fab fa-twitter"></a>
                     </div>
                 </div>
-                
+
                 <div class="col-md-8 col-sm py-sm-4 px-5 d-md-flex justify-content-around">
                     <div class="col-md-4">
                         <h1>Buying</h1>
