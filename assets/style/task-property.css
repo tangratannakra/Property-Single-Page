@@ -16,35 +16,53 @@
 
 /* Bootstrap 4 breakpoints */
 @media (max-width: 575px) {
+
+    /* setting up a missing rule in Bootstrap */
     .justify-content-xs-center {
-        justify-content: center !important;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         margin: 20px 0;
     }
-
 }
 
 @media (min-width: 320px) {
+    #top {
+        padding: 20px 10px;
+    }
+
+    #top h1 {
+        padding-top: 20px;
+    }
+
     #six {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, #17eefc), color-stop(45%, #56015a), to(#56015a));
+        background: -webkit-linear-gradient(top, #17eefc 45%, #56015a 45%, #56015a 100%);
+        background: -o-linear-gradient(top, #17eefc 45%, #56015a 45%, #56015a 100%);
         background: linear-gradient(to bottom, #17eefc 45%, #56015a 45%, #56015a 100%);
     }
 }
 
-
-
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    #selling-section .col {
+        margin-bottom: 50px;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-
     #selling-section .col {
         border-right: 2px solid var(--light-grey);
     }
-
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    #top {
+        padding: 60px 0 130px 0;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -61,36 +79,12 @@
 }
 
 /*   Custom media queries  */
-@media (max-width: 480px) {
-    #header {
-        padding: 20px 10px !important;
-    }
-
-    #header h1 {
-        padding-top: 20px !important;
-    }
-
-    #selling-section .col {
-        margin-bottom: 50px;
-    }
-
-    #selling-section .icons .fas {
-        padding-bottom: 0px !important;
-    }
-
-    .comments-card {
-        width: 100% !important;
-        margin: 20px 0px;
-    }
-
-}
-
 @media (min-width: 992px) and (max-width:1200px) {
-    #latest-properties .justify-content-lg-between {
-        justify-content: space-around !important;
+    #latest-properties .justify-992-1200 {
+        /* needs to be important to overwrite bootstrap rule*/
+        -ms-flex-pack: distribute !important;
+            justify-content: space-around !important;
     }
-
-
 }
 
 body {
@@ -127,7 +121,6 @@ h3 {
     font-weight: 400;
 }
 
-
 .row {
     z-index: 1;
 }
@@ -137,43 +130,21 @@ i {
 }
 
 .btn {
-    color: #fff !important;
-}
-
-.d-lg-flex {
-    display: flex !important;
+    color: #fff;
 }
 
 
 /* Sectiions */
-
 /* first Section */
-#header {
+#top {
     position: relative;
     overflow: hidden;
     background-image: url(/assets/img/section1-purple-overlay.png), url(/assets/img/section1-house.jpg);
     background-size: cover;
-    padding: 60px 0 130px 0;
     color: white;
 }
 
-/* House Logo*/
-.house-bottom {
-    background-color: var(--pink);
-    width: 30px;
-    height: 25px;
-}
-
-.house-top {
-    width: 0px;
-    height: 0px;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 15px solid var(--pink);
-}
-
-
-#logo a {
+#main-nav .logo a {
     color: var(--green);
     font-size: 35px;
     font-weight: 900;
@@ -188,12 +159,11 @@ nav#main-nav ul {
 
 nav#main-nav a {
     color: white;
-
     font-size: 1rem;
     font-family: 'Renner-bold', sans-serif;
 }
 
-#header h1 {
+#top h1 {
     font-size: calc(2rem + 7vmin);
     color: var(--green);
     padding-top: 140px;
@@ -217,6 +187,24 @@ nav#main-nav a {
     color: white;
     border: none;
     width: 90%;
+}
+
+#search input::-webkit-input-placeholder {
+    color: white;
+    font-size: 1.7rem;
+    word-spacing: 5px;
+}
+
+#search input:-ms-input-placeholder {
+    color: white;
+    font-size: 1.7rem;
+    word-spacing: 5px;
+}
+
+#search input::-ms-input-placeholder {
+    color: white;
+    font-size: 1.7rem;
+    word-spacing: 5px;
 }
 
 #search input::placeholder {
@@ -243,7 +231,8 @@ nav#main-nav a {
 .card {
     border: 0px;
     border-radius: 0;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, .4);
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, .4);
 }
 
 .card:last-child {
@@ -262,6 +251,8 @@ nav#main-nav a {
 .tags {
     position: absolute;
     bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -323,7 +314,8 @@ nav#main-nav a {
 #featured-properties {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 50px 60px 30px;
-    box-shadow: 0px 0px 15px #000;
+    -webkit-box-shadow: 0px 0px 15px #000;
+            box-shadow: 0px 0px 15px #000;
     position: relative;
     margin: 250px 0px 350px 0;
 }
@@ -340,7 +332,6 @@ nav#main-nav a {
 #featured-section .tag-info-bottom {
     font-weight: bold;
     font-size: 2rem;
-    ;
 }
 
 #featured-section .tag-info-bottom span {
@@ -354,7 +345,8 @@ nav#main-nav a {
     -webkit-column-count: 2;
     -webkit-column-gap: 20px;
     column-count: 2;
-    column-gap: 40px;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
     width: 100%;
     list-style: none;
     color: var(--grey);
@@ -384,7 +376,7 @@ nav#main-nav a {
     padding-top: 90px;
 }
 
-#selling-sectionur p {
+#selling-section p {
     color: var(--grey);
 }
 
@@ -423,7 +415,6 @@ nav#main-nav a {
 
 #selling-section .icons .fas {
     font-size: 64px;
-    padding-bottom: 30px;
 }
 
 .contact-agent {
@@ -461,9 +452,6 @@ nav#main-nav a {
 }
 
 
-
-
-
 /* Section Five*/
 #submit-section {
     color: var(--yellow);
@@ -473,7 +461,6 @@ nav#main-nav a {
 form#email input[type='text'] {
     padding: 5px;
     border: 0px;
-
 }
 
 form#email .main-row input[type='text'] {
@@ -493,6 +480,11 @@ form#email button[type='submit'] {
     font-weight: bold;
 }
 
+form#email button .fas {
+    color: #fff;
+    padding-right: 10px;
+}
+
 form#email .bottom-row input[type="checkbox"] {
     height: 35px;
     width: 35px;
@@ -505,6 +497,21 @@ form#email .bottom-row input[type="text"] {
     margin-right: 15px;
 }
 
+form#email .bottom-row input[type="text"]#prices-around::-webkit-input-placeholder {
+    color: var(--purple);
+    font-weight: bold;
+}
+
+form#email .bottom-row input[type="text"]#prices-around:-ms-input-placeholder {
+    color: var(--purple);
+    font-weight: bold;
+}
+
+form#email .bottom-row input[type="text"]#prices-around::-ms-input-placeholder {
+    color: var(--purple);
+    font-weight: bold;
+}
+
 form#email .bottom-row input[type="text"]#prices-around::placeholder {
     color: var(--purple);
     font-weight: bold;
@@ -514,8 +521,8 @@ form#email .bottom-row label {
     margin-right: 30px;
 }
 
-/* Section Six*/
 
+/* Section Six*/
 #property-management h1 {
     font-size: calc(1rem + 8vmin);
     margin-bottom: 13vmin;
@@ -597,6 +604,8 @@ form#email .bottom-row label {
     position: absolute;
     top: 0px;
     left: -50px;
+    background: -webkit-radial-gradient(bottom left, circle, transparent 50px, #fff 0);
+    background: -o-radial-gradient(bottom left, circle, transparent 50px, #fff 0);
     background: radial-gradient(circle at bottom left, transparent 50px, #fff 0);
     border-radius: 0px 0px 0px 20px;
 }
@@ -608,55 +617,51 @@ form#email .bottom-row label {
     width: 70%;
     background: #fff;
     border-radius: 0px 20px 20px 20px;
-    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.4));
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.4));
+            filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.4));
 }
-
 
 .comment-field h3 {
     color: var(--pink);
 }
 
+
 /* Section Eight */
-#eight {
+#bottom {
     padding: 60px 0 40px 0;
     color: var(--yellow);
 }
 
-#eight p {
+#bottom p {
     line-height: 1.8rem;
     color: var(--yellow);
 }
 
-#eight #logo {
-    padding-bottom: 40px
+#bottom img {
+    padding-bottom: 30px;
 }
 
-#eight .heading {
-    font-size: 32px;
-}
-
-#eight h1 {
+#bottom h1 {
     font-size: 32px;
     color: var(--green);
 }
 
-#eight ul {
+#bottom ul {
     list-style-position: inside;
     padding-left: 0px;
     padding-top: 8px;
 }
 
-#eight ul li {
+#bottom ul li {
     position: relative;
     font-size: 8px;
     padding-bottom: 5px;
 }
 
-#eight ul li span {
+#bottom ul li span {
     font-size: 1rem;
     margin-left: -5px;
 }
-
 
 footer {
     background-color: var(--grey);
@@ -678,8 +683,6 @@ footer {
     background-color: var(--purple);
 }
 
-
-
 :root {
     --purple: #39003c;
     --green: #01ff83;
@@ -691,7 +694,7 @@ footer {
 }
 
 
-/* Social Buttons*/
+/* Styling the Social Buttons*/
 .scl-btn {
     width: 35px;
     height: 35px;

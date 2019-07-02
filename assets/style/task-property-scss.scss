@@ -1,0 +1,111 @@
+/* --- This is not truly valid Sass code. 
+Tried to wrewrite to sass some nested elemens from the original css file 
+for representation purposes 
+---*/
+
+#top {
+	position: relative;
+	overflow: hidden;
+	background-image: url(/assets/img/section1-purple-overlay.png), url(/assets/img/section1-house.jpg);
+	background-size: cover;
+	color: white;
+	h1 {
+		padding-top: 20px;
+		font-size: calc(2rem + 7vmin);
+		color: var(--green);
+		padding-top: 140px;
+		padding-bottom: 50px;
+		letter-spacing: 2px;
+	}
+}
+
+#property-management {
+	width: 60%;
+	padding: 80px 35px 100px 35px;
+	h1 {
+		font-size: calc(1rem + 8vmin);
+		margin-bottom: 13vmin;
+	}
+	ul {
+		list-style: none;
+		li {
+			line-height: 2rem;
+			font-size: 1.8rem;
+			padding-bottom: 15px;
+			color: white;
+			i {
+				margin-right: 30px;
+			}
+		}
+	}
+	h3 {
+		margin-top: 30px;
+	}
+}
+
+#main-nav {
+	.logo {
+		a {
+			color: var(--green);
+			font-size: 35px;
+			font-weight: 900;
+			font-family: 'Renner-black', sans-serif;
+			margin-left: 10px;
+			display: inline-block;
+		}
+	}
+}
+
+nav#main-nav {
+	ul {
+		width: 100%;
+	}
+	a {
+		color: white;
+		font-size: 1rem;
+		font-family: 'Renner-bold', sans-serif;
+	}
+}
+
+#featured-section {
+	background-image: url(/assets/img/section3-interior.jpg);
+	background-size: cover;
+	color: var(--purple);
+	.tag-info-bottom {
+		border: none;
+		font-weight: bold;
+		font-size: 2rem;
+		span {
+			font-weight: normal;
+			font-size: 1.3rem;
+		}
+	}
+}
+
+#featured-properties {
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 50px 60px 30px;
+	box-shadow: 0px 0px 15px #000;
+	position: relative;
+	margin: 250px 0px 350px 0;
+	ul {
+		column-count: 2;
+		column-gap: 40px;
+		width: 100%;
+		list-style: none;
+		color: var(--grey);
+		font-size: 1.2rem;
+		padding: 0px;
+	}
+}
+
+#quotes-section {
+	padding: 60px 0;
+	h1 {
+		line-height: 40px;
+	}
+	.fas {
+		color: var(--purple);
+		margin: 0 8px;
+	}
+}
