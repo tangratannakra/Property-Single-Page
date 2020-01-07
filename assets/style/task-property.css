@@ -139,7 +139,7 @@ i {
 #top {
     position: relative;
     overflow: hidden;
-    background-image: url(assets/img/section1-purple-overlay.png), url(assets/img/section1-house.jpg);
+    background: url(assets/img/section1-purple-overlay.png), url(assets/img/section1-house.jpg);
     background-size: cover;
     color: white;
 }
