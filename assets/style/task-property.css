@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Renner';
-    src: url(/assets/renner-book.otf);
+    src: url(assets/renner-book.otf);
 }
 
 @font-face {
     font-family: 'Renner-bold';
-    src: url(/assets/renner-bold.otf);
+    src: url(assets/renner-bold.otf);
 }
 
 @font-face {
     font-family: 'Renner-black';
-    src: url(/assets/renner-black.otf);
+    src: url(assets/renner-black.otf);
 }
 
 
@@ -20,8 +20,8 @@
     /* setting up a missing rule in Bootstrap */
     .justify-content-xs-center {
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         margin: 20px 0;
     }
 }
@@ -67,7 +67,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #six {
-        background: url(/assets/img/section6-box.png), url(/assets/img/section6-girl.jpg);
+        background: url(assets/img/section6-box.png), url(assets/img/section6-girl.jpg);
         background-size: 70% 100%, cover;
         background-repeat: no-repeat, no-repeat;
         background-position: 140% 0, 0 0;
@@ -83,7 +83,7 @@
     #latest-properties .justify-992-1200 {
         /* needs to be important to overwrite bootstrap rule*/
         -ms-flex-pack: distribute !important;
-            justify-content: space-around !important;
+        justify-content: space-around !important;
     }
 }
 
@@ -139,7 +139,7 @@ i {
 #top {
     position: relative;
     overflow: hidden;
-    background-image: url(/assets/img/section1-purple-overlay.png), url(/assets/img/section1-house.jpg);
+    background-image: url(assets/img/section1-purple-overlay.png), url(assets/img/section1-house.jpg);
     background-size: cover;
     color: white;
 }
@@ -232,7 +232,7 @@ nav#main-nav a {
     border: 0px;
     border-radius: 0;
     -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, .4);
-            box-shadow: 0px 0px 6px rgba(0, 0, 0, .4);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .4);
 }
 
 .card:last-child {
@@ -302,7 +302,7 @@ nav#main-nav a {
 
 /* Section Three*/
 #featured-section {
-    background-image: url(/assets/img/section3-interior.jpg);
+    background-image: url(assets/img/section3-interior.jpg);
     background-size: cover;
     color: var(--purple);
 }
@@ -315,7 +315,7 @@ nav#main-nav a {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 50px 60px 30px;
     -webkit-box-shadow: 0px 0px 15px #000;
-            box-shadow: 0px 0px 15px #000;
+    box-shadow: 0px 0px 15px #000;
     position: relative;
     margin: 250px 0px 350px 0;
 }
@@ -346,7 +346,7 @@ nav#main-nav a {
     -webkit-column-gap: 20px;
     column-count: 2;
     -webkit-column-gap: 40px;
-            column-gap: 40px;
+    column-gap: 40px;
     width: 100%;
     list-style: none;
     color: var(--grey);
@@ -618,7 +618,7 @@ form#email .bottom-row label {
     background: #fff;
     border-radius: 0px 20px 20px 20px;
     -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.4));
-            filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.4));
 }
 
 .comment-field h3 {
