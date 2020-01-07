@@ -6,7 +6,7 @@ for representation purposes
 #top {
 	position: relative;
 	overflow: hidden;
-	background: url(assets/img/section1-purple-overlay.png), url(assets/img/section1-house.jpg);
+	background: url(/assets/img/section1-purple-overlay.png), url(/assets/img/section1-house.jpg);
 	background-size: cover;
 	color: white;
 
@@ -75,7 +75,7 @@ nav#main-nav {
 }
 
 #featured-section {
-	background-image: url(assets/img/section3-interior.jpg);
+	background-image: url(/assets/img/section3-interior.jpg);
 	background-size: cover;
 	color: var(--purple);
 
