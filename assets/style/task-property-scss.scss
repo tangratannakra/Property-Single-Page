@@ -6,9 +6,10 @@ for representation purposes
 #top {
 	position: relative;
 	overflow: hidden;
-	background-image: url(/assets/img/section1-purple-overlay.png), url(/assets/img/section1-house.jpg);
+	background: url(assets/img/section1-purple-overlay.png), url(assets/img/section1-house.jpg);
 	background-size: cover;
 	color: white;
+
 	h1 {
 		padding-top: 20px;
 		font-size: calc(2rem + 7vmin);
@@ -22,22 +23,27 @@ for representation purposes
 #property-management {
 	width: 60%;
 	padding: 80px 35px 100px 35px;
+
 	h1 {
 		font-size: calc(1rem + 8vmin);
 		margin-bottom: 13vmin;
 	}
+
 	ul {
 		list-style: none;
+
 		li {
 			line-height: 2rem;
 			font-size: 1.8rem;
 			padding-bottom: 15px;
 			color: white;
+
 			i {
 				margin-right: 30px;
 			}
 		}
 	}
+
 	h3 {
 		margin-top: 30px;
 	}
@@ -60,6 +66,7 @@ nav#main-nav {
 	ul {
 		width: 100%;
 	}
+
 	a {
 		color: white;
 		font-size: 1rem;
@@ -68,13 +75,15 @@ nav#main-nav {
 }
 
 #featured-section {
-	background-image: url(/assets/img/section3-interior.jpg);
+	background-image: url(assets/img/section3-interior.jpg);
 	background-size: cover;
 	color: var(--purple);
+
 	.tag-info-bottom {
 		border: none;
 		font-weight: bold;
 		font-size: 2rem;
+
 		span {
 			font-weight: normal;
 			font-size: 1.3rem;
@@ -88,6 +97,7 @@ nav#main-nav {
 	box-shadow: 0px 0px 15px #000;
 	position: relative;
 	margin: 250px 0px 350px 0;
+
 	ul {
 		column-count: 2;
 		column-gap: 40px;
@@ -101,9 +111,11 @@ nav#main-nav {
 
 #quotes-section {
 	padding: 60px 0;
+
 	h1 {
 		line-height: 40px;
 	}
+
 	.fas {
 		color: var(--purple);
 		margin: 0 8px;
