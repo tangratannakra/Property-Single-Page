@@ -67,7 +67,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #six {
-        background: url(~assets/img/section6-box.png), url(~assets/img/section6-girl.jpg);
+        background: url(~/assets/img/section6-box.png), url(~/assets/img/section6-girl.jpg);
         background-size: 70% 100%, cover;
         background-repeat: no-repeat, no-repeat;
         background-position: 140% 0, 0 0;
