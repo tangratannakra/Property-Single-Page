@@ -745,3 +745,7 @@ footer {
 .fa-pinterest {
     background: #cb2027;
 }
+
+.navbar {
+    flex-wrap: nowrap;
+}
